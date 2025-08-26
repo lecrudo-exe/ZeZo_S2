@@ -7,7 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 			const target = document.querySelector(href);
 			if (target) {
 				e.preventDefault();
-				const yOffset = -70; // ajuste para header fixo
+				const yOffset = -70; 
 				const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 				window.scrollTo({ top: y, behavior: 'smooth' });
 			}
